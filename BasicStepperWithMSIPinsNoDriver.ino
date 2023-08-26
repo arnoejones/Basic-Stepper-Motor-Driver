@@ -51,13 +51,13 @@ void setup() {
 /*
 Using DRV8825 stepper driver 
 Data sheet: https://www.ti.com/lit/ds/symlink/drv8825.pdf
-MS1	  MS2	  MS3	  Microstep Resolution
-Low	  Low	  Low	  Full step
-High	Low	  Low	  Half step
-Low	  High	Low	  Quarter step
-High	High	Low	  Eighth step
-Low   Low   High  Sixteenth step
-High	Low 	High	32nd step  (not available on A4988 (Big Easyddriver))
+MS1	  MS2	  MS3	    Microstep Resolution
+Low	  Low	  Low	    Full step
+Low   Low	  High	  Half step
+Low	  High	Low	    Quarter step
+Low   High	High	  Eighth step
+High  Low   Low     Sixteenth step
+High  Low	  High    32nd step  (not available on A4988 (Big Easyddriver))
 */
 void loop() {
   /**** 200 steps for 360º *******/
